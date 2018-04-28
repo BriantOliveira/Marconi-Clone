@@ -24,6 +24,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //app.use(allowCrossDomain);
 
 // Load Routes
+require('./routes/index.js')(app);
 
 // Initializing listener
 app.listen(PORT, function() {
