@@ -7,6 +7,7 @@ module.exports = function(app) {
 
   // Index page
     app.get('/', (req, res) => {
-        res.send('This is the index page')
+      //Returning JSON
+        res.json('Index')
     })
 };
